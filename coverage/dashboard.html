@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/fox/website/mw/skins/chameleon/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/nv.d3.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/home/fox/website/mw/skins/chameleon/src</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Menu/MenuFactory.php.html#36">MenuFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#38">PermissionsHelper</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Sticky.php.html#36">Sticky</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IdRegistry.php.html#36">IdRegistry</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#41">ComponentFactory</a></td><td class="text-right">8%</td></tr>
+       <tr><td><a href="Menu/Menu.php.html#36">Menu</a></td><td class="text-right">9%</td></tr>
+       <tr><td><a href="ChameleonTemplate.php.html#39">ChameleonTemplate</a></td><td class="text-right">11%</td></tr>
+       <tr><td><a href="SkinChameleon.php.html#35">SkinChameleon</a></td><td class="text-right">12%</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#39">NavMenu</a></td><td class="text-right">24%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#43">Modification</a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Components/SiteNotice.php.html#38">SiteNotice</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Components/ToolbarHorizontal.php.html#42">ToolbarHorizontal</a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="Components/NewtalkNotifier.php.html#38">NewtalkNotifier</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Components/PageTools.php.html#45">PageTools</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#38">MenuFromLines</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Components/Structure.php.html#36">Structure</a></td><td class="text-right">78%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ComponentFactory.php.html#41">ComponentFactory</a></td><td class="text-right">504</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#38">PermissionsHelper</a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="IdRegistry.php.html#36">IdRegistry</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#39">NavMenu</a></td><td class="text-right">111</td></tr>
+       <tr><td><a href="Menu/MenuFactory.php.html#36">MenuFactory</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Menu/Menu.php.html#36">Menu</a></td><td class="text-right">101</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#38">MenuFromLines</a></td><td class="text-right">47</td></tr>
+       <tr><td><a href="ChameleonTemplate.php.html#39">ChameleonTemplate</a></td><td class="text-right">41</td></tr>
+       <tr><td><a href="Components/PageTools.php.html#45">PageTools</a></td><td class="text-right">31</td></tr>
+       <tr><td><a href="SkinChameleon.php.html#35">SkinChameleon</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Components/Structure.php.html#36">Structure</a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="Components/ToolbarHorizontal.php.html#42">ToolbarHorizontal</a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Components/SiteNotice.php.html#38">SiteNotice</a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Components/NewtalkNotifier.php.html#38">NewtalkNotifier</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Components/Structure.php.html#58"><abbr title="Structure::getResourceLoaderModules">getResourceLoaderModules</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/PageTools.php.html#228"><abbr title="PageTools::setFlat">setFlat</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IdRegistry.php.html#43"><abbr title="IdRegistry::getRegistry">getRegistry</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IdRegistry.php.html#61"><abbr title="IdRegistry::getId">getId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IdRegistry.php.html#116"><abbr title="IdRegistry::element">element</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IdRegistry.php.html#96"><abbr title="IdRegistry::openElement">openElement</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/PageTools.php.html#118"><abbr title="PageTools::getNamespaceKey">getNamespaceKey</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#190"><abbr title="NavMenu::buildDropdownClosingTags">buildDropdownClosingTags</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Sticky.php.html#45"><abbr title="Sticky::getResourceLoaderModules">getResourceLoaderModules</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Sticky.php.html#38"><abbr title="Sticky::applyModification">applyModification</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#113"><abbr title="NavMenu::buildMenuItemsForDropdownMenu">buildMenuItemsForDropdownMenu</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#138"><abbr title="NavMenu::hasSubmenuItems">hasSubmenuItems</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#163"><abbr title="NavMenu::buildDropdownOpeningTags">buildDropdownOpeningTags</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#147"><abbr title="NavMenu::buildDropdownMenuStub">buildDropdownMenuStub</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/MenuFactory.php.html#46"><abbr title="MenuFactory::getMenuFromMessage">getMenuFromMessage</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/MenuFactory.php.html#74"><abbr title="MenuFactory::getMenuFromMessageText">getMenuFromMessageText</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#154"><abbr title="PermissionsHelper::getNamespaceNumberFromDefinedConstantName">getNamespaceNumberFromDefinedConstantName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#137"><abbr title="PermissionsHelper::pageIsInNamespace">pageIsInNamespace</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SkinChameleon.php.html#48"><abbr title="SkinChameleon::setupSkinUserCss">setupSkinUserCss</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SkinChameleon.php.html#59"><abbr title="SkinChameleon::initPage">initPage</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SkinChameleon.php.html#91"><abbr title="SkinChameleon::getPageClasses">getPageClasses</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SkinChameleon.php.html#79"><abbr title="SkinChameleon::addSkinModulesToOutput">addSkinModulesToOutput</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#125"><abbr title="PermissionsHelper::userHasPermission">userHasPermission</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#113"><abbr title="PermissionsHelper::getValueListFromAttribute">getValueListFromAttribute</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#90"><abbr title="MenuFromLines::parseLines">parseLines</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#74"><abbr title="MenuFromLines::getHtml">getHtml</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#49"><abbr title="PermissionsHelper::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#62"><abbr title="PermissionsHelper::userHasGroup">userHasGroup</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#104"><abbr title="PermissionsHelper::hasAttribute">hasAttribute</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#74"><abbr title="PermissionsHelper::userHas">userHas</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#171"><abbr title="Modification::getResourceLoaderModules">getResourceLoaderModules</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#82"><abbr title="NavMenu::getDropdownForNavMenu">getDropdownForNavMenu</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Component.php.html#126"><abbr title="Component::getSkin">getSkin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#208"><abbr title="ComponentFactory::getModifiedComponent">getModifiedComponent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#197"><abbr title="ComponentFactory::setSkinTemplate">setSkinTemplate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Component.php.html#184"><abbr title="Component::getResourceLoaderModules">getResourceLoaderModules</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#154"><abbr title="Modification::getDomElement">getDomElement</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/Menu.php.html#82"><abbr title="Menu::setMenuItemFormatter">setMenuItemFormatter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/Menu.php.html#102"><abbr title="Menu::anonymous function">anonymous function</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#190"><abbr title="ComponentFactory::getSkinTemplate">getSkinTemplate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#156"><abbr title="ComponentFactory::mapComponentDescriptionToClassName">mapComponentDescriptionToClassName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ChameleonTemplate.php.html#107"><abbr title="ChameleonTemplate::makeListItem">makeListItem</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ChameleonTemplate.php.html#88"><abbr title="ChameleonTemplate::getComponent">getComponent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ChameleonTemplate.php.html#67"><abbr title="ChameleonTemplate::html">html</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#60"><abbr title="ComponentFactory::getRootComponent">getRootComponent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#89"><abbr title="ComponentFactory::getLayoutFile">getLayoutFile</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#139"><abbr title="ComponentFactory::getComponentClassName">getComponentClassName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#116"><abbr title="ComponentFactory::getComponent">getComponent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/Menu.php.html#99"><abbr title="Menu::getItemListFormatter">getItemListFormatter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/Menu.php.html#58"><abbr title="Menu::getMenuItemFormatter">getMenuItemFormatter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#109"><abbr title="Modification::addClasses">addClasses</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#90"><abbr title="Modification::getComponent">getComponent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#116"><abbr title="Modification::getSkinTemplate">getSkinTemplate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#125"><abbr title="Modification::getIndent">getIndent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#145"><abbr title="Modification::removeClasses">removeClasses</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#134"><abbr title="Modification::getClassString">getClassString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#73"><abbr title="Modification::getDomElementOfComponent">getDomElementOfComponent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#83"><abbr title="Modification::setClasses">setClasses</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Components/Modifications/Modification.php.html#66"><abbr title="Modification::getDomElementOfModification">getDomElementOfModification</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/Menu.php.html#114"><abbr title="Menu::setItemListFormatter">setItemListFormatter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ChameleonTemplate.php.html#44"><abbr title="ChameleonTemplate::execute">execute</a></a></td><td class="text-right">12%</td></tr>
+       <tr><td><a href="Components/SiteNotice.php.html#45"><abbr title="SiteNotice::getHtml">getHtml</a></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#52"><abbr title="ComponentFactory::__construct">__construct</a></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="SkinChameleon.php.html#70"><abbr title="SkinChameleon::getComponentFactory">getComponentFactory</a></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Components/ToolbarHorizontal.php.html#49"><abbr title="ToolbarHorizontal::getHtml">getHtml</a></a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#97"><abbr title="ComponentFactory::setLayoutFile">setLayoutFile</a></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Components/NewtalkNotifier.php.html#45"><abbr title="NewtalkNotifier::getHtml">getHtml</a></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#202"><abbr title="MenuFromLines::getHrefForTarget">getHrefForTarget</a></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Hooks/SetupAfterCache.php.html#130"><abbr title="SetupAfterCache::registerCommonBootstrapModules">registerCommonBootstrapModules</a></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#219"><abbr title="MenuFromLines::getHrefForWikiPage">getHrefForWikiPage</a></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#55"><abbr title="MenuFromLines::__construct">__construct</a></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Components/MainContent.php.html#149"><abbr title="MainContent::buildDataAfterContent">buildDataAfterContent</a></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#46"><abbr title="NavMenu::getHtml">getHtml</a></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Menu/MenuFactory.php.html#46"><abbr title="MenuFactory::getMenuFromMessage">getMenuFromMessage</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Components/PageTools.php.html#118"><abbr title="PageTools::getNamespaceKey">getNamespaceKey</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#90"><abbr title="MenuFromLines::parseLines">parseLines</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#208"><abbr title="ComponentFactory::getModifiedComponent">getModifiedComponent</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#156"><abbr title="ComponentFactory::mapComponentDescriptionToClassName">mapComponentDescriptionToClassName</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#154"><abbr title="PermissionsHelper::getNamespaceNumberFromDefinedConstantName">getNamespaceNumberFromDefinedConstantName</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#116"><abbr title="ComponentFactory::getComponent">getComponent</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="IdRegistry.php.html#61"><abbr title="IdRegistry::getId">getId</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="IdRegistry.php.html#96"><abbr title="IdRegistry::openElement">openElement</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="IdRegistry.php.html#116"><abbr title="IdRegistry::element">element</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#113"><abbr title="NavMenu::buildMenuItemsForDropdownMenu">buildMenuItemsForDropdownMenu</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Menu/Menu.php.html#58"><abbr title="Menu::getMenuItemFormatter">getMenuItemFormatter</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#139"><abbr title="ComponentFactory::getComponentClassName">getComponentClassName</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#60"><abbr title="ComponentFactory::getRootComponent">getRootComponent</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#74"><abbr title="PermissionsHelper::userHas">userHas</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ChameleonTemplate.php.html#107"><abbr title="ChameleonTemplate::makeListItem">makeListItem</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Menu/MenuFactory.php.html#74"><abbr title="MenuFactory::getMenuFromMessageText">getMenuFromMessageText</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#82"><abbr title="NavMenu::getDropdownForNavMenu">getDropdownForNavMenu</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Components/ToolbarHorizontal.php.html#49"><abbr title="ToolbarHorizontal::getHtml">getHtml</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Menu/Menu.php.html#99"><abbr title="Menu::getItemListFormatter">getItemListFormatter</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#104"><abbr title="PermissionsHelper::hasAttribute">hasAttribute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#113"><abbr title="PermissionsHelper::getValueListFromAttribute">getValueListFromAttribute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="PermissionsHelper.php.html#137"><abbr title="PermissionsHelper::pageIsInNamespace">pageIsInNamespace</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#138"><abbr title="NavMenu::hasSubmenuItems">hasSubmenuItems</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#74"><abbr title="MenuFromLines::getHtml">getHtml</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Components/Structure.php.html#58"><abbr title="Structure::getResourceLoaderModules">getResourceLoaderModules</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="IdRegistry.php.html#43"><abbr title="IdRegistry::getRegistry">getRegistry</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#202"><abbr title="MenuFromLines::getHrefForTarget">getHrefForTarget</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Components/SiteNotice.php.html#45"><abbr title="SiteNotice::getHtml">getHtml</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Components/NavMenu.php.html#46"><abbr title="NavMenu::getHtml">getHtml</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Components/NewtalkNotifier.php.html#45"><abbr title="NewtalkNotifier::getHtml">getHtml</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Hooks/SetupAfterCache.php.html#130"><abbr title="SetupAfterCache::registerCommonBootstrapModules">registerCommonBootstrapModules</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="SkinChameleon.php.html#70"><abbr title="SkinChameleon::getComponentFactory">getComponentFactory</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="ComponentFactory.php.html#97"><abbr title="ComponentFactory::setLayoutFile">setLayoutFile</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#219"><abbr title="MenuFromLines::getHrefForWikiPage">getHrefForWikiPage</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Menu/MenuFromLines.php.html#55"><abbr title="MenuFromLines::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Components/MainContent.php.html#149"><abbr title="MainContent::buildDataAfterContent">buildDataAfterContent</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.0.11</a> using <a href="http://php.net/" target="_top">PHP 5.5.9-1ubuntu4.5</a> and <a href="http://phpunit.de/">PHPUnit 4.3.5</a> at Tue Nov 25 21:23:31 UTC 2014.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/holder.js" type="text/javascript"></script>
+  <script src="js/d3.min.js" type="text/javascript"></script>
+  <script src="js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([4,2,2,1,1,0,2,1,3,0,4,14], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([60,0,1,0,0,0,4,3,2,3,2,88], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[11.111111111111,7,"<a href=\"ChameleonTemplate.php.html#39\">ChameleonTemplate<\/a>"],[8.4745762711864,25,"<a href=\"ComponentFactory.php.html#41\">ComponentFactory<\/a>"],[100,6,"<a href=\"Components\/Cell.php.html#36\">Cell<\/a>"],[94.117647058824,18,"<a href=\"Components\/Component.php.html#41\">Component<\/a>"],[100,1,"<a href=\"Components\/Container.php.html#41\">Container<\/a>"],[100,5,"<a href=\"Components\/FooterIcons.php.html#38\">FooterIcons<\/a>"],[100,5,"<a href=\"Components\/FooterInfo.php.html#44\">FooterInfo<\/a>"],[100,3,"<a href=\"Components\/FooterPlaces.php.html#38\">FooterPlaces<\/a>"],[100,1,"<a href=\"Components\/Grid.php.html#38\">Grid<\/a>"],[100,3,"<a href=\"Components\/Html.php.html#38\">Html<\/a>"],[100,1,"<a href=\"Components\/Logo.php.html#41\">Logo<\/a>"],[97.959183673469,8,"<a href=\"Components\/MainContent.php.html#43\">MainContent<\/a>"],[9.0909090909091,11,"<a href=\"Menu\/Menu.php.html#36\">Menu<\/a>"],[100,7,"<a href=\"Components\/Modifications\/HideFor.php.html#38\">HideFor<\/a>"],[33.333333333333,15,"<a href=\"Components\/Modifications\/Modification.php.html#43\">Modification<\/a>"],[100,7,"<a href=\"Components\/Modifications\/ShowOnlyFor.php.html#38\">ShowOnlyFor<\/a>"],[0,2,"<a href=\"Components\/Modifications\/Sticky.php.html#36\">Sticky<\/a>"],[24.561403508772,15,"<a href=\"Components\/NavMenu.php.html#39\">NavMenu<\/a>"],[98.717948717949,42,"<a href=\"Components\/NavbarHorizontal.php.html#45\">NavbarHorizontal<\/a>"],[60,3,"<a href=\"Components\/NewtalkNotifier.php.html#38\">NewtalkNotifier<\/a>"],[75,23,"<a href=\"Components\/PageTools.php.html#45\">PageTools<\/a>"],[100,2,"<a href=\"Components\/PersonalTools.php.html#38\">PersonalTools<\/a>"],[100,1,"<a href=\"Components\/Row.php.html#38\">Row<\/a>"],[100,3,"<a href=\"Components\/SearchBar.php.html#41\">SearchBar<\/a>"],[100,1,"<a href=\"Components\/Silent.php.html#41\">Silent<\/a>"],[50,3,"<a href=\"Components\/SiteNotice.php.html#38\">SiteNotice<\/a>"],[78.260869565217,10,"<a href=\"Components\/Structure.php.html#36\">Structure<\/a>"],[55.555555555556,5,"<a href=\"Components\/ToolbarHorizontal.php.html#42\">ToolbarHorizontal<\/a>"],[93.589743589744,26,"<a href=\"Hooks\/SetupAfterCache.php.html#42\">SetupAfterCache<\/a>"],[0,11,"<a href=\"IdRegistry.php.html#36\">IdRegistry<\/a>"],[0,10,"<a href=\"Menu\/MenuFactory.php.html#36\">MenuFactory<\/a>"],[75.324675324675,32,"<a href=\"Menu\/MenuFromLines.php.html#38\">MenuFromLines<\/a>"],[0,16,"<a href=\"PermissionsHelper.php.html#38\">PermissionsHelper<\/a>"],[12.5,6,"<a href=\"SkinChameleon.php.html#35\">SkinChameleon<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[12.5,1,"<a href=\"ChameleonTemplate.php.html#44\">ChameleonTemplate::execute<\/a>"],[0,1,"<a href=\"ChameleonTemplate.php.html#67\">ChameleonTemplate::html<\/a>"],[100,1,"<a href=\"ChameleonTemplate.php.html#76\">ChameleonTemplate::getSkin<\/a>"],[0,1,"<a href=\"ChameleonTemplate.php.html#88\">ChameleonTemplate::getComponent<\/a>"],[0,3,"<a href=\"ChameleonTemplate.php.html#107\">ChameleonTemplate::makeListItem<\/a>"],[50,1,"<a href=\"ComponentFactory.php.html#52\">ComponentFactory::__construct<\/a>"],[0,3,"<a href=\"ComponentFactory.php.html#60\">ComponentFactory::getRootComponent<\/a>"],[0,1,"<a href=\"ComponentFactory.php.html#89\">ComponentFactory::getLayoutFile<\/a>"],[60,2,"<a href=\"ComponentFactory.php.html#97\">ComponentFactory::setLayoutFile<\/a>"],[0,4,"<a href=\"ComponentFactory.php.html#116\">ComponentFactory::getComponent<\/a>"],[0,3,"<a href=\"ComponentFactory.php.html#139\">ComponentFactory::getComponentClassName<\/a>"],[0,4,"<a href=\"ComponentFactory.php.html#156\">ComponentFactory::mapComponentDescriptionToClassName<\/a>"],[0,1,"<a href=\"ComponentFactory.php.html#190\">ComponentFactory::getSkinTemplate<\/a>"],[0,1,"<a href=\"ComponentFactory.php.html#197\">ComponentFactory::setSkinTemplate<\/a>"],[0,4,"<a href=\"ComponentFactory.php.html#208\">ComponentFactory::getModifiedComponent<\/a>"],[100,1,"<a href=\"ComponentFactory.php.html#229\">ComponentFactory::sanitizeFileName<\/a>"],[100,6,"<a href=\"Components\/Cell.php.html#38\">Cell::__construct<\/a>"],[100,2,"<a href=\"Components\/Component.php.html#53\">Component::__construct<\/a>"],[100,1,"<a href=\"Components\/Component.php.html#70\">Component::setClasses<\/a>"],[100,2,"<a href=\"Components\/Component.php.html#84\">Component::addClasses<\/a>"],[100,4,"<a href=\"Components\/Component.php.html#100\">Component::transformClassesToArray<\/a>"],[100,1,"<a href=\"Components\/Component.php.html#117\">Component::getSkinTemplate<\/a>"],[0,1,"<a href=\"Components\/Component.php.html#126\">Component::getSkin<\/a>"],[100,1,"<a href=\"Components\/Component.php.html#136\">Component::getIndent<\/a>"],[100,1,"<a href=\"Components\/Component.php.html#146\">Component::getClassString<\/a>"],[100,1,"<a href=\"Components\/Component.php.html#158\">Component::removeClasses<\/a>"],[100,1,"<a href=\"Components\/Component.php.html#170\">Component::getDomElement<\/a>"],[100,1,"<a href=\"Components\/Component.php.html#179\">Component::getHtml<\/a>"],[0,1,"<a href=\"Components\/Component.php.html#184\">Component::getResourceLoaderModules<\/a>"],[100,1,"<a href=\"Components\/Component.php.html#196\">Component::indent<\/a>"],[100,1,"<a href=\"Components\/Container.php.html#48\">Container::getHtml<\/a>"],[100,5,"<a href=\"Components\/FooterIcons.php.html#45\">FooterIcons::getHtml<\/a>"],[100,1,"<a href=\"Components\/FooterInfo.php.html#46\">FooterInfo::__construct<\/a>"],[100,4,"<a href=\"Components\/FooterInfo.php.html#56\">FooterInfo::getHtml<\/a>"],[100,3,"<a href=\"Components\/FooterPlaces.php.html#45\">FooterPlaces::getHtml<\/a>"],[100,1,"<a href=\"Components\/Grid.php.html#40\">Grid::__construct<\/a>"],[100,3,"<a href=\"Components\/Html.php.html#45\">Html::getHtml<\/a>"],[100,1,"<a href=\"Components\/Logo.php.html#48\">Logo::getHtml<\/a>"],[100,1,"<a href=\"Components\/MainContent.php.html#50\">MainContent::getHtml<\/a>"],[100,3,"<a href=\"Components\/MainContent.php.html#83\">MainContent::buildContentHeader<\/a>"],[100,1,"<a href=\"Components\/MainContent.php.html#125\">MainContent::buildContentBody<\/a>"],[100,1,"<a href=\"Components\/MainContent.php.html#136\">MainContent::buildCategoryLinks<\/a>"],[80,2,"<a href=\"Components\/MainContent.php.html#149\">MainContent::buildDataAfterContent<\/a>"],[100,1,"<a href=\"Menu\/Menu.php.html#41\">Menu::getHtml<\/a>"],[100,1,"<a href=\"Menu\/Menu.php.html#51\">Menu::getHtmlForMenuItem<\/a>"],[0,3,"<a href=\"Menu\/Menu.php.html#58\">Menu::getMenuItemFormatter<\/a>"],[0,1,"<a href=\"Menu\/Menu.php.html#102\">Menu::anonymous function<\/a>"],[0,1,"<a href=\"Menu\/Menu.php.html#82\">Menu::setMenuItemFormatter<\/a>"],[100,1,"<a href=\"Menu\/Menu.php.html#92\">Menu::getHtmlForMenuItemList<\/a>"],[0,2,"<a href=\"Menu\/Menu.php.html#99\">Menu::getItemListFormatter<\/a>"],[0,1,"<a href=\"Menu\/Menu.php.html#114\">Menu::setItemListFormatter<\/a>"],[100,2,"<a href=\"Components\/Modifications\/HideFor.php.html#46\">HideFor::applyModification<\/a>"],[100,3,"<a href=\"Components\/Modifications\/HideFor.php.html#56\">HideFor::isHidden<\/a>"],[100,2,"<a href=\"Components\/Modifications\/HideFor.php.html#64\">HideFor::getPermissionsHelper<\/a>"],[100,1,"<a href=\"Components\/Modifications\/Modification.php.html#51\">Modification::__construct<\/a>"],[100,1,"<a href=\"Components\/Modifications\/Modification.php.html#61\">Modification::applyModification<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#66\">Modification::getDomElementOfModification<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#73\">Modification::getDomElementOfComponent<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#83\">Modification::setClasses<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#90\">Modification::getComponent<\/a>"],[100,1,"<a href=\"Components\/Modifications\/Modification.php.html#98\">Modification::setComponent<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#109\">Modification::addClasses<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#116\">Modification::getSkinTemplate<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#125\">Modification::getIndent<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#134\">Modification::getClassString<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#145\">Modification::removeClasses<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#154\">Modification::getDomElement<\/a>"],[100,1,"<a href=\"Components\/Modifications\/Modification.php.html#163\">Modification::getHtml<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Modification.php.html#171\">Modification::getResourceLoaderModules<\/a>"],[100,2,"<a href=\"Components\/Modifications\/ShowOnlyFor.php.html#46\">ShowOnlyFor::applyModification<\/a>"],[100,3,"<a href=\"Components\/Modifications\/ShowOnlyFor.php.html#56\">ShowOnlyFor::isShown<\/a>"],[100,2,"<a href=\"Components\/Modifications\/ShowOnlyFor.php.html#64\">ShowOnlyFor::getPermissionsHelper<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Sticky.php.html#38\">Sticky::applyModification<\/a>"],[0,1,"<a href=\"Components\/Modifications\/Sticky.php.html#45\">Sticky::getResourceLoaderModules<\/a>"],[87.5,4,"<a href=\"Components\/NavMenu.php.html#46\">NavMenu::getHtml<\/a>"],[0,3,"<a href=\"Components\/NavMenu.php.html#82\">NavMenu::getDropdownForNavMenu<\/a>"],[0,3,"<a href=\"Components\/NavMenu.php.html#113\">NavMenu::buildMenuItemsForDropdownMenu<\/a>"],[0,2,"<a href=\"Components\/NavMenu.php.html#138\">NavMenu::hasSubmenuItems<\/a>"],[0,1,"<a href=\"Components\/NavMenu.php.html#147\">NavMenu::buildDropdownMenuStub<\/a>"],[0,1,"<a href=\"Components\/NavMenu.php.html#163\">NavMenu::buildDropdownOpeningTags<\/a>"],[0,1,"<a href=\"Components\/NavMenu.php.html#190\">NavMenu::buildDropdownClosingTags<\/a>"],[100,2,"<a href=\"Components\/NavbarHorizontal.php.html#55\">NavbarHorizontal::getHtml<\/a>"],[100,2,"<a href=\"Components\/NavbarHorizontal.php.html#67\">NavbarHorizontal::buildHtml<\/a>"],[100,3,"<a href=\"Components\/NavbarHorizontal.php.html#84\">NavbarHorizontal::buildFixedNavBarIfRequested<\/a>"],[100,1,"<a href=\"Components\/NavbarHorizontal.php.html#109\">NavbarHorizontal::buildNavBarOpeningTags<\/a>"],[100,2,"<a href=\"Components\/NavbarHorizontal.php.html#128\">NavbarHorizontal::getHtmlId<\/a>"],[100,2,"<a href=\"Components\/NavbarHorizontal.php.html#138\">NavbarHorizontal::buildNavBarComponents<\/a>"],[100,3,"<a href=\"Components\/NavbarHorizontal.php.html#158\">NavbarHorizontal::buildNavBarElementsFromDomTree<\/a>"],[100,5,"<a href=\"Components\/NavbarHorizontal.php.html#180\">NavbarHorizontal::buildAndCollectNavBarElementFromDomElement<\/a>"],[91.304347826087,7,"<a href=\"Components\/NavbarHorizontal.php.html#202\">NavbarHorizontal::buildNavBarElementFromDomElement<\/a>"],[100,1,"<a href=\"Components\/NavbarHorizontal.php.html#235\">NavbarHorizontal::getLogo<\/a>"],[100,1,"<a href=\"Components\/NavbarHorizontal.php.html#251\">NavbarHorizontal::getNavMenu<\/a>"],[100,2,"<a href=\"Components\/NavbarHorizontal.php.html#267\">NavbarHorizontal::getPageTools<\/a>"],[100,1,"<a href=\"Components\/NavbarHorizontal.php.html#293\">NavbarHorizontal::getSearchBar<\/a>"],[100,6,"<a href=\"Components\/NavbarHorizontal.php.html#306\">NavbarHorizontal::getPersonalTools<\/a>"],[100,1,"<a href=\"Components\/NavbarHorizontal.php.html#377\">NavbarHorizontal::getMenu<\/a>"],[100,1,"<a href=\"Components\/NavbarHorizontal.php.html#390\">NavbarHorizontal::buildHead<\/a>"],[100,1,"<a href=\"Components\/NavbarHorizontal.php.html#409\">NavbarHorizontal::buildTail<\/a>"],[100,1,"<a href=\"Components\/NavbarHorizontal.php.html#418\">NavbarHorizontal::buildNavBarClosingTags<\/a>"],[60,3,"<a href=\"Components\/NewtalkNotifier.php.html#45\">NewtalkNotifier::getHtml<\/a>"],[100,1,"<a href=\"Components\/PageTools.php.html#54\">PageTools::__construct<\/a>"],[100,4,"<a href=\"Components\/PageTools.php.html#68\">PageTools::getHtml<\/a>"],[100,2,"<a href=\"Components\/PageTools.php.html#102\">PageTools::hideSelectedNamespace<\/a>"],[0,4,"<a href=\"Components\/PageTools.php.html#118\">PageTools::getNamespaceKey<\/a>"],[92.307692307692,5,"<a href=\"Components\/PageTools.php.html#152\">PageTools::buildTabGroup<\/a>"],[100,1,"<a href=\"Components\/PageTools.php.html#181\">PageTools::buildTabGroupOpeningTags<\/a>"],[100,4,"<a href=\"Components\/PageTools.php.html#197\">PageTools::buildTab<\/a>"],[100,1,"<a href=\"Components\/PageTools.php.html#218\">PageTools::buildTabGroupClosingTags<\/a>"],[0,1,"<a href=\"Components\/PageTools.php.html#228\">PageTools::setFlat<\/a>"],[100,2,"<a href=\"Components\/PersonalTools.php.html#45\">PersonalTools::getHtml<\/a>"],[100,1,"<a href=\"Components\/Row.php.html#40\">Row::__construct<\/a>"],[100,1,"<a href=\"Components\/SearchBar.php.html#48\">SearchBar::getHtml<\/a>"],[100,2,"<a href=\"Components\/SearchBar.php.html#86\">SearchBar::getSearchButton<\/a>"],[100,1,"<a href=\"Components\/Silent.php.html#48\">Silent::getHtml<\/a>"],[50,3,"<a href=\"Components\/SiteNotice.php.html#45\">SiteNotice::getHtml<\/a>"],[100,2,"<a href=\"Components\/Structure.php.html#45\">Structure::getHtml<\/a>"],[0,2,"<a href=\"Components\/Structure.php.html#58\">Structure::getResourceLoaderModules<\/a>"],[100,6,"<a href=\"Components\/Structure.php.html#71\">Structure::getSubcomponents<\/a>"],[55.555555555556,5,"<a href=\"Components\/ToolbarHorizontal.php.html#49\">ToolbarHorizontal::getHtml<\/a>"],[100,1,"<a href=\"Hooks\/SetupAfterCache.php.html#53\">SetupAfterCache::__construct<\/a>"],[100,1,"<a href=\"Hooks\/SetupAfterCache.php.html#63\">SetupAfterCache::process<\/a>"],[100,2,"<a href=\"Hooks\/SetupAfterCache.php.html#79\">SetupAfterCache::adjustConfiguration<\/a>"],[100,1,"<a href=\"Hooks\/SetupAfterCache.php.html#89\">SetupAfterCache::setInstallPaths<\/a>"],[100,5,"<a href=\"Hooks\/SetupAfterCache.php.html#99\">SetupAfterCache::addLateSettings<\/a>"],[72.222222222222,3,"<a href=\"Hooks\/SetupAfterCache.php.html#130\">SetupAfterCache::registerCommonBootstrapModules<\/a>"],[100,3,"<a href=\"Hooks\/SetupAfterCache.php.html#154\">SetupAfterCache::registerExternalLessModules<\/a>"],[100,3,"<a href=\"Hooks\/SetupAfterCache.php.html#170\">SetupAfterCache::registerExternalLessVariables<\/a>"],[100,1,"<a href=\"Hooks\/SetupAfterCache.php.html#184\">SetupAfterCache::hasConfiguration<\/a>"],[100,2,"<a href=\"Hooks\/SetupAfterCache.php.html#192\">SetupAfterCache::hasConfigurationOfTypeArray<\/a>"],[100,2,"<a href=\"Hooks\/SetupAfterCache.php.html#201\">SetupAfterCache::matchAssociativeElement<\/a>"],[100,2,"<a href=\"Hooks\/SetupAfterCache.php.html#214\">SetupAfterCache::isReadableFile<\/a>"],[0,2,"<a href=\"IdRegistry.php.html#43\">IdRegistry::getRegistry<\/a>"],[0,3,"<a href=\"IdRegistry.php.html#61\">IdRegistry::getId<\/a>"],[0,3,"<a href=\"IdRegistry.php.html#96\">IdRegistry::openElement<\/a>"],[0,3,"<a href=\"IdRegistry.php.html#116\">IdRegistry::element<\/a>"],[0,7,"<a href=\"Menu\/MenuFactory.php.html#46\">MenuFactory::getMenuFromMessage<\/a>"],[0,3,"<a href=\"Menu\/MenuFactory.php.html#74\">MenuFactory::getMenuFromMessageText<\/a>"],[80,2,"<a href=\"Menu\/MenuFromLines.php.html#55\">MenuFromLines::__construct<\/a>"],[0,2,"<a href=\"Menu\/MenuFromLines.php.html#74\">MenuFromLines::getHtml<\/a>"],[0,4,"<a href=\"Menu\/MenuFromLines.php.html#90\">MenuFromLines::parseLines<\/a>"],[100,3,"<a href=\"Menu\/MenuFromLines.php.html#113\">MenuFromLines::getNextLine<\/a>"],[100,2,"<a href=\"Menu\/MenuFromLines.php.html#134\">MenuFromLines::parseOneLine<\/a>"],[100,1,"<a href=\"Menu\/MenuFromLines.php.html#155\">MenuFromLines::extractDepthAndLine<\/a>"],[100,3,"<a href=\"Menu\/MenuFromLines.php.html#171\">MenuFromLines::extractHrefAndLinkText<\/a>"],[100,3,"<a href=\"Menu\/MenuFromLines.php.html#190\">MenuFromLines::getTextFromMessageName<\/a>"],[60,4,"<a href=\"Menu\/MenuFromLines.php.html#202\">MenuFromLines::getHrefForTarget<\/a>"],[75,2,"<a href=\"Menu\/MenuFromLines.php.html#219\">MenuFromLines::getHrefForWikiPage<\/a>"],[100,1,"<a href=\"Menu\/MenuFromLines.php.html#234\">MenuFromLines::createChildAndParseNextLine<\/a>"],[100,2,"<a href=\"Menu\/MenuFromLines.php.html#246\">MenuFromLines::buildHtml<\/a>"],[100,3,"<a href=\"Menu\/MenuFromLines.php.html#260\">MenuFromLines::buildSubmenuHtml<\/a>"],[0,1,"<a href=\"PermissionsHelper.php.html#49\">PermissionsHelper::__construct<\/a>"],[0,1,"<a href=\"PermissionsHelper.php.html#62\">PermissionsHelper::userHasGroup<\/a>"],[0,3,"<a href=\"PermissionsHelper.php.html#74\">PermissionsHelper::userHas<\/a>"],[0,2,"<a href=\"PermissionsHelper.php.html#104\">PermissionsHelper::hasAttribute<\/a>"],[0,2,"<a href=\"PermissionsHelper.php.html#113\">PermissionsHelper::getValueListFromAttribute<\/a>"],[0,1,"<a href=\"PermissionsHelper.php.html#125\">PermissionsHelper::userHasPermission<\/a>"],[0,2,"<a href=\"PermissionsHelper.php.html#137\">PermissionsHelper::pageIsInNamespace<\/a>"],[0,4,"<a href=\"PermissionsHelper.php.html#154\">PermissionsHelper::getNamespaceNumberFromDefinedConstantName<\/a>"],[0,1,"<a href=\"SkinChameleon.php.html#48\">SkinChameleon::setupSkinUserCss<\/a>"],[0,1,"<a href=\"SkinChameleon.php.html#59\">SkinChameleon::initPage<\/a>"],[50,2,"<a href=\"SkinChameleon.php.html#70\">SkinChameleon::getComponentFactory<\/a>"],[0,1,"<a href=\"SkinChameleon.php.html#79\">SkinChameleon::addSkinModulesToOutput<\/a>"],[0,1,"<a href=\"SkinChameleon.php.html#91\">SkinChameleon::getPageClasses<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
